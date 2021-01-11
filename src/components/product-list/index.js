@@ -8,7 +8,7 @@ export default class ProductList extends Component {
     }
 
     view(product) {
-        window.alert('The product ' + product + ' has been viewed!');
+        window.alert('The product has been viewed!');
      }
 
     getProduct(product, index) {
@@ -19,7 +19,7 @@ export default class ProductList extends Component {
                 </h3>
                 <p>Description: {product.description} </p>
                 <button className="btn" onClick={this.share}>Share</button>
-                <button className="btn" onClick={this.view(product.name)}>View</button>
+                <button className="btn" onClick={this.view}>View</button>
             </div>
         )
     }

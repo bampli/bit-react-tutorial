@@ -56,7 +56,7 @@ var ProductList = /*#__PURE__*/function (_Component) {
   }, {
     key: "view",
     value: function view(product) {
-      window.alert('The product ' + product + ' has been viewed!');
+      window.alert('The product has been viewed!');
     }
   }, {
     key: "getProduct",
@@ -71,7 +71,7 @@ var ProductList = /*#__PURE__*/function (_Component) {
         onClick: this.share
       }, "Share"), /*#__PURE__*/_react.default.createElement("button", {
         className: "btn",
-        onClick: this.view(product.name)
+        onClick: this.view
       }, "View"));
     }
   }, {
